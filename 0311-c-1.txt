@@ -1,0 +1,23 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    char name[30];
+    int day;
+    float money;
+    char grade;
+    
+    printf("여행지를 알려주세요: "); 
+    scanf("%s", name);
+    printf("여행일수를 알려주세요: ");
+    scanf("%d", &day);
+    printf("여행경비를 자세히 알려주세요: ");
+    scanf("%f", &money);
+    printf("여행등급은 어떤가요(A,B,C):");
+    scanf(" %c", &grade);
+    printf("여행지는 %s, %d일동안 다녀오시는군요\n", name, day);
+    printf("여행경비는 %.1f원이군요\n", money);
+    printf("여행등급은  %c등급인가요", grade);
+
+    return 0;
+}
