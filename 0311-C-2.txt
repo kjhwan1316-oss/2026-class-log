@@ -1,0 +1,22 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int num; //정수형 변수 선언
+    printf("숫자를 입력하세요: "); 
+    scanf("%d", &num); //변수 입력
+    if(num % 2 == 0){ //if 조건문 () 나머지
+		// %는 나누기 후 나머지를 표기
+		// 같지않다는 !=, ==는 같다라는 뜻 =과 ==은 쓰는 의미적으로 다름
+		// =는 값을 대입할 때 사용
+		// 이상과 이하를 표시하고싶을 때는 >와< 뒤에 =을 붙여야함 	
+         printf("짝수\n");
+        printf("2로 나눈 나머지가 0\n");
+    }
+    else // if를 제외한 다른 경우
+      {  printf("홀수\n");
+        printf("2로 나눈 나머지가 1\n");
+    }
+
+    return 0;
+}
