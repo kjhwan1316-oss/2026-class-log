@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main()
+{
+    int num1;
+    int num2;
+    int sum; //더하기
+    int sub; //빼기
+    int mul; //곱하기
+    double divi;//나누기
+    char op;
+
+    
+    printf("첫 번째 수를 입력하세요: ");
+    scanf("%d", &num1);
+    printf("연산자를 입력하세요(+ - * /): ");
+    scanf(" %c", &op);
+    printf("두 번째 수를 입입력하세요: ");
+    scanf("%d", &num2);
+    switch(op)
+    {
+        case '+':
+        sum = num1 + num2;
+        printf("두 수의 합은 %d 입니다", sum);
+        break;
+        case '-':
+        sub= num1-num2;
+        printf(" 두 수의 차는 %d입니다", sub);
+        break;
+        case '*':
+        mul = num1* num2;
+        printf("두 수의 곱은 %d 입니다", mul);
+        break;
+        case'/':
+        divi= (double)num1 /num2;
+        printf("두 수의 나누기는 %.2f입니다", divi);
+        break;
+    }
+
+    
+
+
+    return 0;
+}
