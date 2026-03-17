@@ -20,19 +20,19 @@ int main()
     switch(op)
     {
         case '+':
-        sum = num1 + num2;
+        sum = num1 + num2; //  더하기의 값을 표기하기위해 필요함
         printf("두 수의 합은 %d 입니다", sum);
         break;
         case '-':
-        sub= num1-num2;
+        sub= num1-num2; // 빼기의 값을 표기하기위해 필요함
         printf(" 두 수의 차는 %d입니다", sub);
         break;
         case '*':
-        mul = num1* num2;
+        mul = num1* num2; // 곱하기의 값을 표기하기위해 필요함
         printf("두 수의 곱은 %d 입니다", mul);
         break;
         case'/':
-        divi= (double)num1 /num2;
+        divi= (double)num1 /num2; // 나누기의 값을 표기하기위해 필요함
         printf("두 수의 나누기는 %.2f입니다", divi);
         break;
     }

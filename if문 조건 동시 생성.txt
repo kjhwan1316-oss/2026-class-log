@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main()
+{
+    int menu;
+    
+    printf("좋아하는 음식은 무엇인가요(1:치킨, 2:피자,3:떡볶이,4:햄버거,5~7:랜덤): ");
+    scanf("%d", &menu);
+    
+    if (menu==1){
+        printf("치킨을 좋아하시는군요");
+    }
+    else if (menu==2){
+        printf("피자를 좋아하시는군요");
+    }
+    else if (menu==3){
+        printf("떡볶이를 좋아하시는군요");
+    }
+    else if (menu==4){
+        printf("햄버거를 좋아하시는군요");
+    }
+    else if (5<= menu && menu<=7){ //5와 7를 둘다 만족하기위해선 &&를 사용하여 조건을 2개 만들어야함
+        printf("랜덤");
+    }
+    else
+        printf("입력오류");
+    
+
+
+    return 0;
+}
